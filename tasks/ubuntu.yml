@@ -1,0 +1,6 @@
+---
+- name: install - supermarket_{{ chef_supermarket_version }}-1_amd64.deb
+  when: ansible_distribution == 'Ubuntu' and chef_supermarket_version is defined
+  apt:
+    # yamllint disable-line rule:line-length
+    deb: https://packages.chef.io/files/stable/supermarket/{{ chef_supermarket_version }}/{{ ansible_distribution | lower}}/{{ ansible_distribution_version }}/supermarket_{{ chef_supermarket_version }}-1_amd64.deb
