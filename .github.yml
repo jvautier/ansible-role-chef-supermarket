@@ -1,0 +1,8 @@
+---
+fullname: jvautier/ansible-role-chef-supermarket
+description: Install chef-supermarket through ansible
+tags:
+  - ansible
+  - ansible-role
+  - chef-supermarket
+github: {}
